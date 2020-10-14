@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AlloPet</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+      Theme Name: BizPage
+      Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+      Author: BootstrapMade.com
+      License: https://bootstrapmade.com/license/
+    ======================================================= -->
+
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #185890;
+            overflow-x: hidden;
+            padding-top: 10px;
+            margin-top: 102px;
+        }
+
+            .sidenav a {
+                padding: 3px 0px 9px 0px;
+                text-decoration: none;
+                font-size: 14px;
+                color: #f9fbf9;
+                display: block;
+            }
+
+                .sidenav a:hover {
+                    color: #f18235;
+                    cursor: pointer;
+                }
+
+        .ImagesCss {
+            height: 35px;
+        }
+
+         .dropbtn {
+            background-color: white;
+            /* color: white; */
+            padding: 16px;
+            font-size: 16px
+        }
+
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: white;
+            }
+
+        #myInput {
+            box-sizing: border-box;
+            background-image: url('searchicon.png');
+            background-position: 14px 12px;
+            background-repeat: no-repeat;
+            font-size: 16px;
+            padding: 14px 20px 12px 45px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+        }
+
+            #myInput:focus {
+                outline: 3px solid #ddd;
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 593px;
+            overflow: auto;
+            border: 1px solid #ddd;
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="container-fluid">
+
+        <div class="row Card" style="    box-shadow: 1px 1px 1px 1px #1f1e1e6e;
+    /* position: absolute; */
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;">
+
+
+            <div>
+                <img src="img/images.png" style="    height: 96px;
+    /* margin-left: 79px; */
+    margin-top: 2px;
+    margin-left: 35px;" />
+
+
+            </div>
+
+            <div>
+                <a href="index.html" style="color: white;
+    font-size: 18px;">
+                    <img src="img/logout.png" href="index.html" style=" height: 30px;
+    /* margin-left: 79px; */
+   margin-top: -120px;
+    margin-left: 1441px;" />
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-2 sidenav">
+
+
+
+
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-lg-2">
+                        <img src="img/Studentdetails.png" class="ImagesCss" />
+                    </div>
+                    <div class="col-lg-9">
+                        <a href="StudentDashboard.html" style="color: white;
+    font-size: 18px;">Student Details</a>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-lg-2">
+                        <img src="img/Staff.png" class="ImagesCss" />
+                    </div>
+                    <div class="col-lg-9">
+                        <a href="StaffDashboard.html" style="color: white;
+    font-size: 18px;">Staff Details</a>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-lg-2">
+                        <img src="img/Routedetails.png" class="ImagesCss" />
+                    </div>
+                    <div class="col-lg-9">
+                        <a href="RouteDashboard.html" style="color: white;
+    font-size: 18px;">Route Details</a>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-lg-2">
+                        <img src="img/StaffRoute.png" class="ImagesCss" />
+                    </div>
+                    <div class="col-lg-9">
+                        <a href="StopDashboard.html" style="color: white;
+    font-size: 18px;">Stop Details</a>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-lg-2">
+                        <img src="img/Studentmap.png" class="ImagesCss" />
+                    </div>
+                    <div class="col-lg-9">
+                        <a href="StudentMapDashboard.html" style="color: white;
+    font-size: 18px;">Student Route Map</a>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-lg-2">
+                        <img src="img/Staffmap.png" class="ImagesCss" />
+                    </div>
+                    <div class="col-lg-9">
+                        <a href="StaffMapDashboard.html" style="color: white;
+    font-size: 18px;">Staff Route Map</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="container-fluid">
+
+
+
+                <div class="row">
+                    <div class="col-lg-2 sidenav">
+
+
+
+
+                        <div class="row" style="margin-top: 20px;">
+                            <div class="col-lg-2">
+                                <img src="img/Studentdetails.png" class="ImagesCss" />
+                            </div>
+                            <div class="col-lg-9">
+                                <a href="StudentDashboard.html" style="color: white;
+    font-size: 18px;">Student Details</a>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-lg-2">
+                                <img src="img/Staff.png" class="ImagesCss" />
+                            </div>
+                            <div class="col-lg-9">
+                                <a href="StaffDashboard.html" style="color: white;
+    font-size: 18px;">Staff Details</a>
+                            </div>
+                        </div>
+
+
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-lg-2">
+                                <img src="img/Routedetails.png" class="ImagesCss" />
+                            </div>
+                            <div class="col-lg-9">
+                                <a href="RouteDashboard.html" style="color: white;
+    font-size: 18px;">Route Details</a>
+                            </div>
+                        </div>
+
+
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-lg-2">
+                                <img src="img/StaffRoute.png" class="ImagesCss" />
+                            </div>
+                            <div class="col-lg-9">
+                                <a href="StopDashboard.html" style="color: white;
+    font-size: 18px;">Stop Details</a>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-lg-2">
+                                <img src="img/Studentmap.png" class="ImagesCss" />
+                            </div>
+                            <div class="col-lg-9">
+                                <a href="StudentMapDashboard.html" style="color: white;
+    font-size: 18px;">Student Route Map</a>
+                            </div>
+                        </div>
+
+
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-lg-2">
+                                <img src="img/Staffmap.png" class="ImagesCss" />
+                            </div>
+                            <div class="col-lg-9">
+                                <a href="StaffMapDashboard.html" style="color: white;
+    font-size: 18px;">Staff Route Map</a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="col-lg-9" style="    margin-left: 320px;margin-top: 66px;">
+
+                        <h4 style="font-weight: bold;    margin-top: 58px;">Map New Staff</h4>
+
+
+                        <div class="row card" style="box-shadow: 1px 1px 1px 1px #bdb5b5;    padding: 40px;">
+
+
+                            <div class="row">
+                                <div class="col-lg-2">
+
+                                    <label>Staff Name</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!--<select class="form-control" id="ddl_Staff" name="Staff">
+                                        <option value="none"> Select Staff Name</option>
+
+
+                                    </select>-->
+                                    <div class="dropdown">
+                                        <div onclick="myFunction()" id="selected_stdnt" style="        border: 2px solid;
+        width: 513px;
+        height: 41px;
+        text-align: start;
+        padding: 10px;
+        border-radius: 7px;">
+
+                                        </div>
+                                        <!--<textarea onclick="myFunction()" id="" onKeyPress="cleartextarea(event)" style="width: 100%;height: 41px;text-align: start;padding: 10px;border-radius: 7px;"></textarea>-->
+                                        <!--<button onclick="myFunction()" style="width: 578%;height: 41px;text-align: start;padding: 10px;border-radius: 7px;" class="dropbtn">
+                                            Dropdown
+                                        </button>-->
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <input type="text" placeholder="Search.." id="myInput" style="width:100%" onkeyup="filterFunction()">
+                                            <div id="stdent_name">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-2">
+
+                                    <label style="margin-top: 20px;">Route No</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <select class="form-control" id="ddl_Route" name="Route" style="margin-top: 20px;">
+                                        <option value="none"> Select Route No</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+                            <br />
+
+
+                            <div class="row">
+
+                                <div class="col-lg-4">
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <input id="Submit1" class="form-control" onclick="Save()" style="background: #f5dc92;
+    width: 126px;" type="submit" value="Save" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+
+    <script>
+
+          var studentdetails = [];
+        function selectedstudent(std_id) {
+
+            debugger;
+            selectedstudent_id = std_id;
+            spanforstudents_start = "<a><span>";
+            spanforstudents_end = "<span></a>";
+            let selected_stud = "";
+            if (studentdetails.length>0) {
+                selected_stud = studentdetails.find(el => el.id == std_id);
+            }
+
+
+            document.getElementById('selected_stdnt').innerHTML = spanforstudents_start + selected_stud.name + spanforstudents_end;
+             document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        $.get("https://14.192.17.225/StudentTransportAPI/Announcement/GetStaffDetails",
+            //function (data, status) {
+            //    debugger
+            //    if (data.length > 0) {
+            //        for (var i = 0; i < data.length; i++) {
+
+            //            $("#ddl_Staff").append($("<option></option>").val(data[i].id).html(data[i].name));
+            //        }
+            //    }
+            //    else {
+            //        swal('There is no data found!');
+            //    }
+            //});
+
+
+
+             function (data, status) {
+                debugger
+                
+                var tag_start = "<a onclick='selectedstudent(";
+                var tag_end = "</a>";
+                if (data.length > 0) {
+                    studentdetails = data;
+                    var tags_content = "";
+                    for (var i = 0; i < data.length; i++) {
+
+                        tags_content = tags_content + tag_start + data[i].id + ")'>" + data[i].name + tag_end;
+                       // $("#ddl_Student").append($("<option></option>").val(data[i].id).html(data[i].name));
+                    }
+                    document.getElementById('stdent_name').innerHTML = tags_content;
+                }
+                else {
+                    swal('There is no data found!');
+                }
+            });
+
+        $.get("https://14.192.17.225/StudentTransportAPI/Announcement/GetRouteMaster",
+            function (data, status) {
+                debugger
+                if (data.length > 0) {
+                    for (var i = 0; i < data.length; i++) {
+
+                        $("#ddl_Route").append($("<option></option>").val(data[i].id).html(data[i].routeNumber));
+                    }
+                }
+                else {
+                    swal('There is no data found!');
+                }
+            });
+
+
+
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+
+
+        function Save() {
+            debugger
+            if (document.getElementById('selected_stdnt').value == '') {
+                swal('Please Select Staff Name.');
+
+            }
+            else if (document.getElementById('ddl_Route').value == '') {
+                swal('Please Select Route Number.')
+            }
+
+            else {
+                debugger;
+                var StaffID = selectedstudent_id;
+                var RouteID = document.getElementById('ddl_Route').value;
+
+
+
+
+
+                var Entity = { StaffID: StaffID, RouteID: RouteID };
+
+                $.ajax({
+                    url: 'https://14.192.17.225/StudentTransportAPI/Announcement/InsertStaffRouteMapping',
+                    type: 'post',
+                    data: Entity,
+                    dataType: 'json',
+                    success: function (response) {
+                        debugger;
+                        swal('Saved Sucessfully');
+                        location.href = "./StaffMapDashboard.html";
+
+                    },
+                    error: function (error) {
+                        debugger;
+
+                    }
+                });
+
+
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

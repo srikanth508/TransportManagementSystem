@@ -1,0 +1,375 @@
+﻿<!--<!DOCTYPE html>-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AlloPet</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+      Theme Name: BizPage
+      Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+      Author: BootstrapMade.com
+      License: https://bootstrapmade.com/license/
+    ======================================================= -->
+
+
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #185890;
+            overflow-x: hidden;
+            padding-top: 10px;
+            margin-top: 102px;
+        }
+
+            .sidenav a {
+                padding: 3px 0px 9px 0px;
+                text-decoration: none;
+                font-size: 14px;
+                color: #f9fbf9;
+                display: block;
+            }
+
+                .sidenav a:hover {
+                    color: #f18235;
+                    cursor: pointer;
+                }
+
+        .ImagesCss {
+            height: 35px;
+        }
+
+        .tableresponsive {
+            padding: 23px;
+            margin-left: 1px;
+        }
+
+        .tableheaderfont {
+            color: white;
+        }
+
+        .tableheader {
+            border: black;
+            background-color: #00b5d7;
+            text-align: center;
+        }
+
+        .mainrow {
+            float: right;
+            margin-top: 26px;
+        }
+
+        .maincard {
+            float: initial;
+            background: white;
+        }
+
+        .excelbutton {
+            margin-left: auto;
+            margin-right: 20px;
+            background-color: #00b5d7;
+            color: white;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="container-fluid">
+
+        <div class="row Card" style="    box-shadow: 1px 1px 1px 1px #1f1e1e6e;
+    /* position: absolute; */
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;">
+
+
+            <div>
+                <img src="img/images.png" style="    height: 96px;
+    /* margin-left: 79px; */
+    margin-top: 2px;
+    margin-left: 35px;" />
+
+
+            </div>
+
+            <div>
+                <a href="index.html" style="color: white;
+    font-size: 18px;">
+                    <img src="img/logout.png" href="index.html" style="        height: 30px;
+        /* margin-left: 79px; */
+        margin-top: -70px;
+        margin-left: 1441px;" />
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-2 sidenav">
+
+
+
+
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-lg-2">
+                        <img src="img/Studentdetails.png" class="ImagesCss" />
+                    </div>
+                    <div class="col-lg-9">
+                        <a href="ChildDetailsDashboard.html" style="color: white;
+    font-size: 18px;">Child Details</a>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-lg-2">
+                        <img src="img/StaffRoute.png" class="ImagesCss" />
+                    </div>
+                    <div class="col-lg-9">
+                        <a href="BusDetailsDashboard.html" style="color: white;
+    font-size: 18px;">Bus Route Details</a>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-lg-2">
+                        <img src="img/Routedetails.png" class="ImagesCss" />
+                    </div>
+                    <div class="col-lg-9">
+                        <a href="ChildStopDashboard.html" style="color: white;
+    font-size: 18px;">Stop Details</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-9 " style="    margin-left: 320px;margin-top: 66px;">
+
+                <h4 style="font-weight: bold;
+    margin-top: 58px;
+    font size: 23px;
+    font-size: 40px;
+    text-align: center;">
+                    Child Details
+                </h4>
+
+                <div id="childdetailsdiv">
+                    <div class="row card" style="    margin-top: 45px;
+    box-shadow: 1px 1px 1px 1px #a9a0a0;
+    height: 400px;
+    width: 85%;
+    margin-left: 90px;background-color:#c3e0f9;
+}">
+
+
+
+                        <div class="col-lg-4">
+                            <img src="img/Empty.png" style="margin-top: 90px;
+    margin-left: 50px;" />
+
+                        </div>
+                        <div class="col-lg-8" style="margin-top: 35px;">
+                            <div>
+
+                            </div>
+                            <div class="row" style="margin-top: 100px;
+    font-size: 20px;
+">
+                                <div class="col-lg-1">
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <label style="font-weight: bold;">Name :</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="llb_Name"></label>
+                                </div>
+                                <!--  -->
+                            </div>
+
+
+
+
+                            <div class="row">
+                                <div class="col-lg-1">
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <label style="font-size:20px; font-weight: bold;">Parent Name :</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label style="font-size:20px;" class="llb_ParentName"></label>
+                                </div>
+                                <div class="col-lg-1">
+
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-lg-1">
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <label style="font-size:20px; font-weight: bold;">Class :</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label style="font-size:20px;" class="llb_Class"></label>
+                                </div>
+                                <div class="col-lg-1">
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-1">
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <label style="font-size:20px; font-weight: bold;">Bus Route :</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label style="font-size:20px;" class="llb_BusRoute"></label>
+                                </div>
+                                <div class="col-lg-1">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+
+
+    <script type="text/javascript">
+        debugger;
+        var ParentEmail = sessionStorage.getItem('ParentEmail');
+
+        $.get("https://14.192.17.225/StudentTransportAPI/Announcement/GetChildDetails?ParentEmail=" + ParentEmail,
+            function (data, status) {
+                debugger
+                if (data.length > 0) {
+                    var childdiv = "";
+                    for (let j = 0; j < data.length; j++) {
+                        let existingcards = document.getElementById('childdetailsdiv').innerHTML;
+                        childdiv = childdiv + existingcards;
+                    }
+                    document.getElementById('childdetailsdiv').innerHTML = childdiv;
+
+                    for (let i = 0; i < data.length; i++) {
+                        document.getElementsByClassName('llb_Name')[i].innerText = data[i].name;
+                        document.getElementsByClassName('llb_ParentName')[i].innerText = data[i].parentName;
+                        document.getElementsByClassName('llb_Class')[i].innerText = data[i].className;
+                        document.getElementsByClassName('llb_BusRoute')[i].innerText = data[i].routeNumber;
+                    }
+
+                }
+                else {
+                    swal('There is no data found!');
+                }
+            });
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
